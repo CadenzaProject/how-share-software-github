@@ -11,5 +11,11 @@ parts:
      - file: intro/account
   - caption: Setting GitHub
     chapters:
-      - file: collaboration/new_repo
+      - file: repo/new_repo
+      - file: repo/local
+      - file: repo/secure
+  - caption: Collaboration
+    chapters:
+      - file: collab/branch
+      - file: collab/fork
 
