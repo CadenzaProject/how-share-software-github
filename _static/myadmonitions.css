@@ -1,0 +1,10 @@
+div.admonition-git {
+    border-left-color: rgba(0, 246, 16, 1);
+}
+div.admonition-git .admonition-title {
+    background-color: rgba(0, 246, 16, .1);
+}
+div.admonition-git .admonition-title:before {
+    color: rgba(0, 246, 16, 1);
+    content: '\f19d';
+}

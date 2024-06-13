@@ -2,12 +2,14 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: landing
+root: index
+title: My alternate page title
 parts:
   - caption: Introduction
     chapters:
      - file: intro/intro
-  - caption: Second Part
+     - file: intro/account
+  - caption: Setting GitHub
     chapters:
-      - file: notebooks
-      - file: markdown-notebooks
+      - file: collaboration/new_repo
+
