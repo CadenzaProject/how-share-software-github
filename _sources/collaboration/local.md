@@ -40,7 +40,7 @@ One key file on all GitHub repositories is the `README.md` file.
 This file is used to describe the repository, its content, and how to use it.
 It is the first file that users see when they access the repository.
 
-The format of this file is called **Markdown**. 
+The format of this file is called [**Markdown**](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). 
 Which is a lightweight markup language with plain text formatting syntax.
 :::
 
