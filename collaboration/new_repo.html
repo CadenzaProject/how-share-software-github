@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>First Repository &#8212; How to share software and models via GitHub or other platforms</title>
+    <title>First Repo &#8212; How to share software and models via GitHub or other platforms</title>
   
   
   
@@ -184,7 +184,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting GitHub</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">First Repository</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">First Repo</a></li>
 </ul>
 
     </div>
@@ -357,7 +357,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -368,11 +370,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>First Repository</h1>
+    <h1>First Repo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">Change Name</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,12 +395,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="first-repository">
-<h1>First Repository<a class="headerlink" href="#first-repository" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="first-repo">
+<h1>First Repo<a class="headerlink" href="#first-repo" title="Link to this heading">#</a></h1>
 <p>Let’s assume you are working in a private project. You first need to create
 your repository on GitHub. For this:</p>
 <ol class="arabic simple">
-<li><p>Go to <a class="reference external" href="https://github.com">GitHub</a> and log in.</p></li>
+<li><p>If you are not already logged in, go to <a class="reference external" href="https://github.com">GitHub</a> and log in.</p></li>
 <li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> sign in the top right corner and select <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">repository</span></code>.</p></li>
 </ol>
 <p><img alt="New repository" src="../_images/new-repository.png" /></p>
@@ -395,6 +408,19 @@ your repository on GitHub. For this:</p>
 <li><p>Fill in the repository name, description, and select if you want it to be public or private. Then click on <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">repository</span></code>.
 Other options are available, but for now, we will keep it simple.</p></li>
 </ol>
+<blockquote>
+<div><p>The description is optional, but it can help others understand what the repository is about.
+So, it is a good practice to add one or two sentences describing the content/objective of the repository.</p>
+</div></blockquote>
+<blockquote>
+<div><p>You can start with a private repository, and later, if you want to share it with others, you can change it to public.</p>
+</div></blockquote>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example:</p>
+<p>I created a repository <em>named</em> <code class="docutils literal notranslate"><span class="pre">vcca2024-share-with-github</span></code>.
+The <em>description</em> is <code class="docutils literal notranslate"><span class="pre">Repository</span> <span class="pre">for</span> <span class="pre">sharing</span> <span class="pre">code</span> <span class="pre">and</span> <span class="pre">files</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">VCCA</span> <span class="pre">2024</span> <span class="pre">workshop</span> <span class="pre">participants</span></code>.
+An, I selected the repository to be <em>public</em>.</p>
+</div>
 <p><img alt="Create repository" src="../_images/create-repository.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -406,6 +432,26 @@ There is more information about these options in the GitHub documentation.</p>
 <li><p>Once the repository is created, you will see the repository page. You can see the URL of the repository in the address bar of your browser.</p></li>
 </ol>
 <p><img alt="Repository URL" src="../_images/repository-url.png" /></p>
+<section id="making-changes-to-your-repo">
+<h2>Making changes to your repo<a class="headerlink" href="#making-changes-to-your-repo" title="Link to this heading">#</a></h2>
+<p>After a repository has been created, you can make changes to it like
+changing the repo name, description, adding files, etc.</p>
+<section id="change-name">
+<h3>Change Name<a class="headerlink" href="#change-name" title="Link to this heading">#</a></h3>
+<p>To change the name of the repository:</p>
+<ol class="arabic simple">
+<li><p>Go to the repository page.</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Settings</span></code> tab.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">Repository</span> <span class="pre">name</span></code> field, change the name of the repository.</p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Rename</span></code>.</p></li>
+</ol>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example:</p>
+<p>I am changing the name <code class="docutils literal notranslate"><span class="pre">vcca2024-share-with-github</span></code> to <code class="docutils literal notranslate"><span class="pre">vcca2024-share-with-github-demo</span></code>.</p>
+</div>
+<p><img alt="Rename repository" src="../_images/rename-repository.png" /></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -453,6 +499,24 @@ There is more information about these options in the GitHub documentation.</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">Change Name</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
