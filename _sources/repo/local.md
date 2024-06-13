@@ -15,6 +15,7 @@ To clone a repository, follow these steps:
 
 ```bash
 git clone https://github.com/CadenzaProject/vcca2024-share-with-github-demo.git
+cd vcca2024-share-with-github-demo
 ```
 
 The URL is the URL of the repository you want to clone.

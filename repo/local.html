@@ -58,9 +58,10 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'collaboration/local';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'repo/local';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Securing our repo" href="secure.html" />
     <link rel="prev" title="First Repo" href="new_repo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -186,6 +187,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="new_repo.html">First Repo</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Working with a local repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secure.html">Securing our repo</a></li>
 </ul>
 
     </div>
@@ -257,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/CadenzaProject/how-share-software-github/issues/new?title=Issue%20on%20page%20%2Fcollaboration/local.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/CadenzaProject/how-share-software-github/issues/new?title=Issue%20on%20page%20%2Frepo/local.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -287,7 +289,7 @@
       
       
       
-      <li><a href="../_sources/collaboration/local.md" target="_blank"
+      <li><a href="../_sources/repo/local.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -415,6 +417,7 @@ The command to clone a repository with <strong>GIT</strong> is <code class="docu
 <li><p>Run the following command:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/CadenzaProject/vcca2024-share-with-github-demo.git
+<span class="nb">cd</span><span class="w"> </span>vcca2024-share-with-github-demo
 </pre></div>
 </div>
 <p>The URL is the URL of the repository you want to clone.
@@ -541,7 +544,7 @@ by transferring the commits from your local repository to a remote one.</p>
         },
         kernelOptions: {
             name: "python3",
-            path: "./collaboration"
+            path: "./repo"
         },
         predefinedOutput: true
     }
@@ -566,6 +569,15 @@ by transferring the commits from your local repository to a remote one.</p>
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">First Repo</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="secure.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Securing our repo</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
