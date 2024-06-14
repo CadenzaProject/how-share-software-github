@@ -17,6 +17,7 @@ You can add a title and description to explain the changes you made in the branc
 After filling out the form, click on the "Create pull request" button to submit the PR.
 However, before merging the PR, you need to wait for the code to be reviewed by other collaborators.
 
+
 ```{admonition} Best Practices
 :class: hint
 
@@ -24,7 +25,7 @@ However, before merging the PR, you need to wait for the code to be reviewed by 
 * **Add a detailed description**: Explain the purpose of the changes, why they were made, and any relevant information.
 * **Assign reviewers**: Assign one or more reviewers to the PR to ensure that the code is reviewed before merging.
 * **Add labels**: Use labels to categorize the PR (e.g., bug fix, feature, documentation).
-* **Link issues**: If the PR is related to an issue, link the issue in the description.
+* **Link issues**: If the PR is related to an issue, [link the issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) in the description.
 * **Keep the PR small**: Try to keep the changes in a PR small and focused on a single task.
 * **Respond to feedback**: If reviewers provide feedback, address their comments and make the necessary changes.
 

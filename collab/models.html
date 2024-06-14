@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5. Securing our repo &#8212; How to share software and models via GitHub or other platforms</title>
+    <title>11. Sharing machine learning models &#8212; How to share software and models via GitHub or other platforms</title>
   
   
   
@@ -58,11 +58,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'repo/secure';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'collab/models';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. Creating Issues Templates" href="issue.html" />
-    <link rel="prev" title="4. Making Changes" href="local.html" />
+    <link rel="next" title="12. Conclusions" href="../concl/concl.html" />
+    <link rel="prev" title="10. Making changes in a Fork" href="fork.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -183,20 +183,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../intro/intro.html">1. Git and GitHub</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Starting with GitHub</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="account.html">2. Setting Up Your Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="new_repo.html">3. Create First Repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="local.html">4. Making Changes</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Securing our repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="issue.html">6. Creating Issues Templates</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../repo/account.html">2. Setting Up Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/new_repo.html">3. Create First Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/local.html">4. Making Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/secure.html">5. Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/issue.html">6. Creating Issues Templates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Collaboration</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../collab/general.html">7. Collaborating with others</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../collab/branch.html">8. Branching the code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../collab/pull.html">9. Pull Request</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../collab/fork.html">10. Making changes in a Fork</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../collab/models.html">11. Sharing machine learning models</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="general.html">7. Collaborating with others</a></li>
+<li class="toctree-l1"><a class="reference internal" href="branch.html">8. Branching the code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull.html">9. Pull Request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fork.html">10. Making changes in a Fork</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Sharing machine learning models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Conclusions</span></p>
 <ul class="nav bd-sidenav">
@@ -272,7 +272,7 @@
       
       
       
-      <li><a href="https://github.com/CadenzaProject/how-share-software-github/issues/new?title=Issue%20on%20page%20%2Frepo/secure.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/CadenzaProject/how-share-software-github/issues/new?title=Issue%20on%20page%20%2Fcollab/models.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -302,7 +302,7 @@
       
       
       
-      <li><a href="../_sources/repo/secure.md" target="_blank"
+      <li><a href="../_sources/collab/models.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -386,7 +386,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Securing our repo</h1>
+    <h1>Sharing machine learning models</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,8 +396,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protect-the-main-branch">5.1. Protect the main branch</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#push-changes-in-our-protected-branch">5.2. Push changes in our protected branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face">11.1. Hugging Face</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-models-using-the-web-interface">11.1.1. Sharing models using the web interface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-models-using-the-modelhubmixin-class">11.1.2. Sharing models using the ModelHubMixin class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-huggingface">11.2. GitHub and HuggingFace</a></li>
 </ul>
             </nav>
         </div>
@@ -409,55 +413,109 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="securing-our-repo">
-<h1><span class="section-number">5. </span>Securing our repo<a class="headerlink" href="#securing-our-repo" title="Link to this heading">#</a></h1>
-<p>Now, we’re going to make our repository more secure by adding a few
-layers of protection. This is a good practice to prevent unauthorized changes to our codebase.
-We won’t block people to collaborate, but we will make sure that only the right content
-is being pushed to the repository.</p>
-<section id="protect-the-main-branch">
-<h2><span class="section-number">5.1. </span>Protect the main branch<a class="headerlink" href="#protect-the-main-branch" title="Link to this heading">#</a></h2>
-<p>As was mentioned before, the main branch is the most important branch in our repository.
-It should always contain the latest stable version of our codebase.
-We will protect the main branch to prevent unwanted changes by requiring pull request
-reviews before merging.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sharing-machine-learning-models">
+<h1><span class="section-number">11. </span>Sharing machine learning models<a class="headerlink" href="#sharing-machine-learning-models" title="Link to this heading">#</a></h1>
+<p>Up to now, we have been focus on sharing code and collaborating with others on GitHub.
+But what about sharing machine learning models?</p>
+<p>For ML models, we can use the same principles of version control and collaboration that
+we have seen before. However, there are some additional considerations when sharing models,
+such as the size of the model, the data, and the dependencies. GitHub has some limitations
+when it comes to sharing large files, so we may want to use other tools and platforms to share
+large machine learning models.</p>
+<p>For this kind of content, we can use the same tools that we have seen before, like GitHub,
+but we can also use other platforms like <a class="reference external" href="https://huggingface.co/">Hugging Face</a>,
+<a class="reference external" href="https://wandb.ai/">Weights &amp; Biases</a>, and <a class="reference external" href="https://tfhub.dev/">TensorFlow Hub</a>.</p>
+<p>In this section, we will see how to share machine learning models using Hugging Face.</p>
+<section id="hugging-face">
+<h2><span class="section-number">11.1. </span>Hugging Face<a class="headerlink" href="#hugging-face" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/hf-logo.png"><img alt="../_images/hf-logo.png" src="../_images/hf-logo.png" style="width: 200px;" /></a>
+</figure>
+<p>Hugging Face’s platform and libraries, particularly the <code class="docutils literal notranslate"><span class="pre">Transformers</span></code> library and
+<code class="docutils literal notranslate"><span class="pre">Hugging</span> <span class="pre">Face</span> <span class="pre">Hub</span></code>, enable efficient and collaborative code sharing.
+By providing access to a vast array of models, datasets, and tools,
+Hugging Face empowers developers, researchers, and organizations to accelerate
+their projects.</p>
+<p>We can use Hugging Face to share models, datasets, and training scripts.</p>
+<section id="sharing-models-using-the-web-interface">
+<h3><span class="section-number">11.1.1. </span>Sharing models using the web interface<a class="headerlink" href="#sharing-models-using-the-web-interface" title="Link to this heading">#</a></h3>
+<p>To share a model on Hugging Face, you need to create a repository on the platform.
+You can do this by following these steps:</p>
 <ol class="arabic simple">
-<li><p>Go to the repository settings</p></li>
-<li><p>Click on “Branches” in the left sidebar</p></li>
-<li><p>Under “Branch protection rules”, click on “Add classic branch protection rule”</p></li>
-<li><p>In the “Branch name pattern” field, type <code class="docutils literal notranslate"><span class="pre">main</span></code></p></li>
-<li><p>Check the following options:</p>
-<ul class="simple">
-<li><p>“Require pull request reviews before merging”</p></li>
-<li><p>“Require status checks to pass before merging”</p></li>
-<li><p>“Require branches to be up-to-date before merging”</p></li>
-<li><p>“Do not allow bypassing the above settings”</p></li>
-</ul>
-</li>
+<li><p>Go to the <a class="reference external" href="https://huggingface.co/">Hugging Face website</a></p></li>
+<li><p>Sign in or create an account</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Model</span></code> button on the top right corner</p></li>
+<li><p>Fill in the details of the model, such as the name, description, and tags</p></li>
 </ol>
-<p>With these settings, you will ensure that all changes are reviewed before merging
-into the main branch.</p>
-<ol class="arabic simple" start="6">
-<li><p>For any other rule, just pressed “Add rule” and repeat the process.</p></li>
-</ol>
+<p><img alt="New Model" src="../_images/new-model.gif" /></p>
 </section>
-<section id="push-changes-in-our-protected-branch">
-<h2><span class="section-number">5.2. </span>Push changes in our protected branch<a class="headerlink" href="#push-changes-in-our-protected-branch" title="Link to this heading">#</a></h2>
-<p>Let’s try to push a commit in the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch again</p>
+<section id="sharing-models-using-the-modelhubmixin-class">
+<h3><span class="section-number">11.1.2. </span>Sharing models using the ModelHubMixin class<a class="headerlink" href="#sharing-models-using-the-modelhubmixin-class" title="Link to this heading">#</a></h3>
+<p>Perhaps, a better way to share models is by using the <code class="docutils literal notranslate"><span class="pre">ModelHubMixin</span></code> class from the <code class="docutils literal notranslate"><span class="pre">transformers</span></code> library.
+This functionality allows you to upload your model to the Hugging Face Hub directly from your Python code.</p>
+<p>huggingFace offers a range of mixins for different frameworks, such as PyTorch, Keras, and Fastai.</p>
+<p>Here is an example of how to use the <code class="docutils literal notranslate"><span class="pre">PyTorchModelHubMixin</span></code> class to upload a model to the Hugging Face Hub
+using a PyTorch model:</p>
 <ol class="arabic simple">
-<li><p>In your computer, open <code class="docutils literal notranslate"><span class="pre">README.md</span></code> again</p></li>
-<li><p>Add any text at the end</p></li>
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-a</span> <span class="pre">-m</span> <span class="pre">&quot;improving</span> <span class="pre">readme&quot;</span></code></p></li>
-<li><p>Push the changes to the remote repository as before by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>.</p></li>
+<li><p>Install the <code class="docutils literal notranslate"><span class="pre">transformers</span></code> library</p></li>
 </ol>
-<p><img alt="Blocked Branch.png" src="../_images/block-branch.png" /></p>
-<div class="dropdown error admonition">
-<p class="admonition-title">We got an error. What just happened?</p>
-<p>The error message is telling us that we can’t push directly to the main branch.
-This is because we have protected the main branch, and we need to create a pull request
-to merge our changes.</p>
-<p>Let’s do this in the next part.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>transformers
+</pre></div>
 </div>
+<ol class="arabic simple" start="2">
+<li><p>Create a PyTorch model</p></li>
+</ol>
+<p>Define and train your PyTorch model as usual. Ensure your model class inherits from
+<code class="docutils literal notranslate"><span class="pre">torch.nn.Module</span></code>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Implement PyTorchModelHubMixin</p></li>
+</ol>
+<p>Make your model class inherit from <code class="docutils literal notranslate"><span class="pre">PyTorchModelHubMixin</span></code>.
+This mixin provides methods to save and load models from the Hugging Face Hub.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">transformers</span> <span class="kn">import</span> <span class="n">PyTorchModelHubMixin</span>
+<span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">,</span> <span class="n">PyTorchModelHubMixin</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">MyModel</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">layer</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Instantiate and train your model as usual</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">MyModel</span><span class="p">()</span>
+<span class="c1"># ... train your model</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Save the model to the Hugging Face Hub</p></li>
+</ol>
+<p>Use the save_pretrained method to save your model to a local directory.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">save_pretrained</span><span class="p">(</span><span class="s2">&quot;./my_model&quot;</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">push_to_hub</span><span class="p">(</span>
+    <span class="s2">&quot;my_model&quot;</span><span class="p">,</span>
+    <span class="n">token</span><span class="o">=&lt;</span><span class="n">your_token</span><span class="o">&gt;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Load the model from the Hugging Face Hub</p></li>
+</ol>
+<p>Use the from_pretrained method to load your model from the Hugging Face Hub.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">MyModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;my_model&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="github-and-huggingface">
+<h2><span class="section-number">11.2. </span>GitHub and HuggingFace<a class="headerlink" href="#github-and-huggingface" title="Link to this heading">#</a></h2>
+<p>GitHub and Hugging Face can be used together to share machine learning models.
+You can use GitHub to store the code and the training scripts, and Hugging Face to store the models.
+This way, you can have a complete pipeline for sharing machine learning models.
+Also, in this way, you can use the version control features of GitHub to track changes in the code and the models.</p>
+<p>In a similar way, you could share public dataset in Hugging Face <code class="docutils literal notranslate"><span class="pre">Datasets</span></code> and use it
+in your GitHub repository.</p>
 </section>
 </section>
 
@@ -474,7 +532,7 @@ to merge our changes.</p>
         },
         kernelOptions: {
             name: "python3",
-            path: "./repo"
+            path: "./collab"
         },
         predefinedOutput: true
     }
@@ -492,20 +550,20 @@ to merge our changes.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="local.html"
+       href="fork.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Making Changes</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Making changes in a Fork</p>
       </div>
     </a>
     <a class="right-next"
-       href="issue.html"
+       href="../concl/concl.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Creating Issues Templates</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Conclusions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -525,8 +583,12 @@ to merge our changes.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#protect-the-main-branch">5.1. Protect the main branch</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#push-changes-in-our-protected-branch">5.2. Push changes in our protected branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face">11.1. Hugging Face</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-models-using-the-web-interface">11.1.1. Sharing models using the web interface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-models-using-the-modelhubmixin-class">11.1.2. Sharing models using the ModelHubMixin class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-huggingface">11.2. GitHub and HuggingFace</a></li>
 </ul>
   </nav></div>
 
