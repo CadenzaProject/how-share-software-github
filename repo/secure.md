@@ -1,6 +1,6 @@
 # Securing our repo
 
-Now, the fun stuff! We're going to make our repository more secure by adding a few 
+Now, we're going to make our repository more secure by adding a few 
 layers of protection. This is a good practice to prevent unauthorized changes to our codebase.
 We won't block people to collaborate, but we will make sure that only the right content 
 is being pushed to the repository.
@@ -67,13 +67,12 @@ Add any other context about the problem here such as the data that is being used
 5. Add and commit the changes to your repository
 6. Push the changes to the remote repository.
 
-We got an error. What just happened?
-
 ![Blocked Branch.png](../figures/block-branch.png)
 
-:::{toggle}
+:::{admonition} We got an error. What just happened?
+:class: dropdown, error
 The error message is telling us that we can't push directly to the main branch.
-This is because we have protected the main branch and we need to create a pull request
+This is because we have protected the main branch, and we need to create a pull request
 to merge our changes.
 
 Let's do this in the next part.
