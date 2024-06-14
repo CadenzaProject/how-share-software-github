@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Understanding the Basics of GitHub &#8212; How to share software and models via GitHub or other platforms</title>
+    <title>1. Git and GitHub &#8212; How to share software and models via GitHub or other platforms</title>
   
   
   
@@ -61,7 +61,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro/intro';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Starting with GitHub" href="account.html" />
+    <link rel="next" title="2. Setting Up Your Account" href="../repo/account.html" />
     <link rel="prev" title="How to share software and models via GitHub or other platforms" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -180,12 +180,22 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Understanding the Basics of GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="account.html">Starting with GitHub</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Git and GitHub</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting GitHub</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Starting with GitHub</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../collaboration/new_repo.html">First Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/account.html">2. Setting Up Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/new_repo.html">3. Create First Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/local.html">4. Making Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/secure.html">5. Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../repo/issue.html">6. Creating Issues Templates</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Collaboration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../collab/general.html">7. Collaborating with others</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/branch.html">8. Branching the code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/pull.html">9. Pull Request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/fork.html">10. Making changes in a Fork</a></li>
 </ul>
 
     </div>
@@ -371,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Understanding the Basics of GitHub</h1>
+    <h1>Git and GitHub</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,19 +391,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-repo">Repository (Repo)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#branch">Branch</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit">Commit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-pr">Pull Request (PR)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">Merge</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fork">Fork</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issue">Issue</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone">Clone</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">GitHub Actions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">1.1. Key Concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">1.2. Workflow</a></li>
 </ul>
             </nav>
         </div>
@@ -405,95 +404,115 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="understanding-the-basics-of-github">
-<h1>Understanding the Basics of GitHub<a class="headerlink" href="#understanding-the-basics-of-github" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="git-and-github">
+<h1><span class="section-number">1. </span>Git and GitHub<a class="headerlink" href="#git-and-github" title="Link to this heading">#</a></h1>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/Git-logo.png"><img alt="Git" src="../_images/Git-logo.png" style="width: 200px;" /></a>
+</figure>
+<p>Git is a distributed version control system created by Linus Torvalds in 2005,
+which allows developers to track changes in their code over time and
+collaborate with others seamlessly. Git offers numerous features and properties, including:</p>
+<ol class="arabic simple">
+<li><p><strong>Distributed systems</strong>: Each developer has a local copy of the repository on their machine.
+This allows for faster operations since most tasks are performed locally.</p></li>
+<li><p><strong>Branching and merging</strong>: Developers can create branches to work on specific features or fixes
+without affecting the main codebase. Once the work is complete, the changes can be merged back into the main branch.</p></li>
+<li><p><strong>Data integrity</strong>: Every file and commit are checksummed using SHA-1 hashes, ensuring data integrity.
+Commited data are very difficult to alter, providing a reliable history of changes.</p></li>
+<li><p><strong>Distributed collaboration</strong>: Git supports various workflows for collaborating with others on a project.</p></li>
+<li><p><strong>Open Source and Community</strong>: Git is free and open-source and has a large community of users and contributors.
+It works cross-platform, working on all major operating systems, including Windows, macOS, and Linux.</p></li>
+</ol>
+<p>There are several platforms that provide Git hosting services, including GitHub, GitLab, and Bitbucket.
+These platforms offer additional features on top of Git, such as issue tracking, pull requests, and continuous integration.
+In this workshop, we will focus on GitHub, one of the most popular Git hosting services, and explore its features and functionalities.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/GitHub.png"><img alt="GitHub" src="../_images/GitHub.png" style="width: 150px;" /></a>
 </figure>
-<p>GitHub is a platform for version control and collaboration, primarily
-designed to facilitate software development. It is built on top of Git,
-and provides a web-based interface that simplifies many aspects of Git’s
-functionality, making it more accessible and easier to use, especially
-for those who are new to version control systems.</p>
-<div class="admonition-git admonition">
-<p class="admonition-title">Git</p>
-<a class="reference internal image-reference" href="../_images/Git-logo.png"><img alt="Git" class="align-left" src="../_images/Git-logo.png" style="width: 70px;" /></a>
-<p><br />
-Git is a distributed version control system created by Linus Torvalds in 2005,
-which allows developers to track changes in their code over time and
-collaborate with others seamlessly</p>
-</div>
+<p>Github is a web-based platform that provides hosting for Git repositories and offers a wide range of features to support software development projects.
+Some of the key features of GitHub include:</p>
+<ul class="simple">
+<li><p><strong>Version Control</strong>: Keep track of changes in your code, and revert to previous versions if needed.</p></li>
+<li><p><strong>Collaboration</strong>: Work with others on the same project, and keep track of who did what.</p></li>
+<li><p><strong>Code Review</strong>: Get feedback on your code from others, and improve its quality.</p></li>
+<li><p><strong>Issue Tracking</strong>: Keep track of bugs, feature requests, and other tasks related to your project.</p></li>
+<li><p><strong>Continuous Integration</strong>: Automate testing and deployment of your code, making it easier to maintain and scale.</p></li>
+<li><p><strong>Documentation</strong>: Write and maintain documentation for your project, making it easier for others to understand and use it.</p></li>
+<li><p><strong>Community</strong>: Build a community around your project, and get help from others when needed.</p></li>
+<li><p><strong>Open Source</strong>: Share your work with others, and contribute to open source projects.</p></li>
+<li><p><strong>Portfolio</strong>: Showcase your work to potential employers, collaborators, and users.</p></li>
+</ul>
 <section id="key-concepts">
-<h2>Key Concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
-<section id="repository-repo">
-<h3>Repository (Repo)<a class="headerlink" href="#repository-repo" title="Link to this heading">#</a></h3>
+<h2><span class="section-number">1.1. </span>Key Concepts<a class="headerlink" href="#key-concepts" title="Link to this heading">#</a></h2>
+<div class="dropdown admonition">
+<p class="admonition-title">Repository (Repo)</p>
 <p>A repository is a storage space where a project and its files are kept.
 It contains all the project’s files and the entire revision history
 of each file. Repositories can be public, allowing anyone to view and
 contribute, or private, restricting access to specific users.
 They are the central hub for all the activity in a project,
 including code, documentation, and issues.</p>
-</section>
-<section id="branch">
-<h3>Branch<a class="headerlink" href="#branch" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Branch</p>
 <p>A branch is a parallel version of a repository. It allows you to work
 on different versions of a project simultaneously. The main branch,
 often called “main” or “master,” is considered the production-ready
 version of the project. Developers create branches to develop features,
 fix bugs, or experiment without affecting the main branch.
 Once the work on a branch is complete, it can be merged back into the main branch.</p>
-</section>
-<section id="commit">
-<h3>Commit<a class="headerlink" href="#commit" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Commit</p>
 <p>A commit is a record of changes made to the files in a repository.
 Each commit has a unique ID and contains a message describing the changes made.
 Commits allow you to track the history of changes in a project, providing a
 detailed timeline of how the project has evolved over time.
 They act as snapshots of the project at specific points, which can be reverted
 to if needed.</p>
-</section>
-<section id="pull-request-pr">
-<h3>Pull Request (PR)<a class="headerlink" href="#pull-request-pr" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Pull Request (PR)</p>
 <p>A pull request is a method of proposing changes to a repository.
 When you create a pull request, you ask the repository maintainers
 to review and merge your changes into the main branch. Pull requests
 facilitate collaboration by allowing team members to discuss and
 review code before it is merged. They provide a structured way to
 manage changes and ensure code quality.</p>
-</section>
-<section id="merge">
-<h3>Merge<a class="headerlink" href="#merge" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Merge</p>
 <p>Merging is the process of integrating changes from one branch into another.
 When a pull request is approved, the changes are merged into the main branch,
 incorporating the new code into the project. Merging ensures that updates
 and new features developed in separate branches are consolidated into the
 main codebase.</p>
-</section>
-<section id="fork">
-<h3>Fork<a class="headerlink" href="#fork" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Fork</p>
 <p>A fork is a personal copy of another user’s repository.
 Forking a repository allows you to freely experiment with changes without
 affecting the original project. You can make changes in your fork,
 and if you want those changes to be incorporated into the original
 repository, you can submit a pull request.</p>
-</section>
-<section id="issue">
-<h3>Issue<a class="headerlink" href="#issue" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Issue</p>
 <p>An issue is a way to track enhancements, tasks, and bugs for a project.
 Issues can be assigned to specific users, labeled, and organized into milestones.
 They provide a clear way to manage and prioritize work, ensuring that everyone
 on the team is aware of what needs to be done and any problems that need to
 be addressed.</p>
-</section>
-<section id="clone">
-<h3>Clone<a class="headerlink" href="#clone" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Clone</p>
 <p>Cloning is the process of creating a local copy of a repository on your computer.
 Cloning allows you to work on a project locally, making changes and committing
 them before pushing them back to the remote repository on GitHub.
 It enables offline development and testing.</p>
-</section>
-<section id="github-actions">
-<h3>GitHub Actions<a class="headerlink" href="#github-actions" title="Link to this heading">#</a></h3>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">GitHub Actions</p>
 <p>GitHub Actions is an automation tool integrated into GitHub that allows you
 to automate your software development workflows. With GitHub Actions,
 you can create workflows that build, test, and deploy your code whenever
@@ -504,10 +523,10 @@ and continuous deployment (CI/CD) directly from your repository.</p>
 <p>GitHub Actions will not be covered in this workshop, but it is a powerful
 tool that you should explore to streamline your development process.</p>
 </div>
-</section>
+</div>
 </section>
 <section id="workflow">
-<h2>Workflow<a class="headerlink" href="#workflow" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.2. </span>Workflow<a class="headerlink" href="#workflow" title="Link to this heading">#</a></h2>
 <p>The typical workflow in GitHub involves the following steps:</p>
 <ol class="arabic simple">
 <li><p><strong>Create a Repository</strong>: Start by creating a new repository on GitHub.
@@ -523,8 +542,8 @@ Add new files, modify existing files, or delete files as needed.</p></li>
 <li><p><strong>Commit Changes</strong>: Commit your changes to the branch with a descriptive
 message. Commits create a snapshot of the project at that point in time.</p></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>You will need to install Git on your local machine to use the Git commands.
 For this, you can follow the instructions provided on the <a class="reference external" href="https://git-scm.com/">Git website</a>.</p>
 </div>
@@ -571,11 +590,11 @@ For this, you can follow the instructions provided on the <a class="reference ex
       </div>
     </a>
     <a class="right-next"
-       href="account.html"
+       href="../repo/account.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Starting with GitHub</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Setting Up Your Account</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -595,19 +614,8 @@ For this, you can follow the instructions provided on the <a class="reference ex
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">Key Concepts</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-repo">Repository (Repo)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#branch">Branch</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#commit">Commit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-pr">Pull Request (PR)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#merge">Merge</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fork">Fork</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#issue">Issue</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#clone">Clone</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-actions">GitHub Actions</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">Workflow</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts">1.1. Key Concepts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow">1.2. Workflow</a></li>
 </ul>
   </nav></div>
 

@@ -1,6 +1,6 @@
-# Working with a local repository
+# Making Changes
 
-## Cloning a repository
+## Cloning a Repository
 
 To start working in your repository, you need to make a **local copy** of it
 (a copy in your computer), which allows you to work on it offline. 
@@ -9,19 +9,27 @@ The command to clone a repository with **GIT** is `git clone`.
 
 To clone a repository, follow these steps:
 
-1. Open a terminal window.
+1. In you computer, open a terminal window.
 2. CD to the directory where you want to clone the repository.
 3. Run the following command:
 
 ```bash
-git clone https://github.com/CadenzaProject/vcca2024-share-with-github-demo.git
-cd vcca2024-share-with-github-demo
+git clone <repo URL>
+cd <repo name>
 ```
 
 The URL is the URL of the repository you want to clone.
 You can get the link directly from GitHub
 
-![Clone](../figures/clone.png)
+```{figure} ../figures/clone.png
+:name: empty-repo
+An empty repository
+```
+
+```{figure} ../figures/clone_2.png
+:name: no-empty-repo
+A repository with files.
+```
 
 `git clone` will create a directory in your computer with the same name as the repository.
 
@@ -43,21 +51,35 @@ It is the first file that users see when they access the repository.
 
 The format of this file is called [**Markdown**](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). 
 Which is a lightweight markup language with plain text formatting syntax.
+
+A good example of this is the `README.md` file of the [PyClarity repository](https://github.com/claritychallenge/clarity/blob/main/README.md).
+As you can see in this file, it provides an introduction to the project, how to install it, how to use it,
+and what are the current and previous challenges.
+
+```{figure} ../figures/clarity_readme-md.png
+:name: Clarity readme
+
+PyClarity Readme for Clarity and Cadenza Projects
+```
+
 :::
 
-### Adding files
+
+## Adding files
 
 We created our repository without a default `README.md` file.
 Let's create one now.
 
-1. Inside the repository directory, create a new file named `README.md`.
+1. In your computer, inside the repository directory, create a new file named `README.md`.
 2. Open the file with your favorite text editor.
 3. Add the following content:
+
 ```markdown
 # VCCA 2024 - My Repo
 
 This is the landing page for the demo repo created for VCCA 2024 workshop on sharing with GitHub.
 ```
+
 4. Save the file.
 
 ![README.md](../figures/readme-md.png)
@@ -86,23 +108,20 @@ The staging area (or index) is an intermediate area where changes are gathered b
 
 Usage:
 * `git add <file>`: Add a specific file to the staging area. Like we did with the `README.md` file.
-* `git add .`: Add all files in the working directory to the staging area.
-* `git ass -i`: This opens an interactive interface to select changes to be staged.
+* `git add .`: Add all files in the working directory to the staging area (Note the ` . ` at the end).
+* `git add -i`: This opens an interactive interface to select changes to be staged.
 
 Now that the file is `staged` (in the staging area) we can commit it.
 
-The git commit command is used in Git to save changes from the staging area to the repository. 
+The `git commit` command is used in Git to save changes from the staging area to the repository. 
 This command creates a new commit containing the changes that have been staged, 
 along with a message that describes the changes.
 
 Usage:
-* `git commit -m "Descriptive commit message"`: The most common way to commit changes. The `-m` flag allows you to add a commit message directly from the command line.
+* `git commit -m "Descriptive commit message"`: This is the most common way to commit changes. The `-m` flag allows you to add a commit message directly from the command line.
 * `git commit -a -m "Commit message"`: The `-a` flag (or `--all`) will automatically stage any tracked,  
 modified files before the commit, skipping the `git add` step. However, this will not stage new (untracked) files. 
 
-:::{admonition} Example:
-git commit -m "Adding the README file in repository"
-:::
 
 :::{admonition} Best Practices
 :class: attention
@@ -119,7 +138,7 @@ For this, we run the `git push` command.
 by transferring the commits from your local repository to a remote one.
 
 Usage:
-* **git push**: This command is used to push commits from your local repository to a remote repository.
+* `git push`: This command is used to push commits from your local repository to a remote repository.
 
 :::warning
 Before pushing changes, make sure you have the necessary permissions to push to the repository.

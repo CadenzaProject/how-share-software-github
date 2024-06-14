@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>First Repo &#8212; How to share software and models via GitHub or other platforms</title>
+    <title>3. Create First Repo &#8212; How to share software and models via GitHub or other platforms</title>
   
   
   
@@ -61,8 +61,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'repo/new_repo';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Working with a local repository" href="local.html" />
-    <link rel="prev" title="Starting with GitHub" href="../intro/account.html" />
+    <link rel="next" title="4. Making Changes" href="local.html" />
+    <link rel="prev" title="2. Setting Up Your Account" href="account.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,14 +180,22 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../intro/intro.html">Understanding the Basics of GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro/account.html">Starting with GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro.html">1. Git and GitHub</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting GitHub</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Starting with GitHub</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">First Repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="local.html">Working with a local repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="secure.html">Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">2. Setting Up Your Account</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Create First Repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="local.html">4. Making Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secure.html">5. Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue.html">6. Creating Issues Templates</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Collaboration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../collab/general.html">7. Collaborating with others</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/branch.html">8. Branching the code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/pull.html">9. Pull Request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/fork.html">10. Making changes in a Fork</a></li>
 </ul>
 
     </div>
@@ -373,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>First Repo</h1>
+    <h1>Create First Repo</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,8 +391,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">Change Name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">3.1. Making changes to your repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">3.1.1. Change Name</a></li>
 </ul>
 </li>
 </ul>
@@ -398,9 +406,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="first-repo">
-<h1>First Repo<a class="headerlink" href="#first-repo" title="Link to this heading">#</a></h1>
-<p>Let’s assume you are working in a private project. You first need to create
+  <section class="tex2jax_ignore mathjax_ignore" id="create-first-repo">
+<h1><span class="section-number">3. </span>Create First Repo<a class="headerlink" href="#create-first-repo" title="Link to this heading">#</a></h1>
+<p>Let’s assume you are working in a private project. You will need to first create
 your repository on GitHub. For this:</p>
 <ol class="arabic simple">
 <li><p>If you are not already logged in, go to <a class="reference external" href="https://github.com">GitHub</a> and log in.</p></li>
@@ -411,36 +419,65 @@ your repository on GitHub. For this:</p>
 <li><p>Fill in the repository name, description, and select if you want it to be public or private. Then click on <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">repository</span></code>.
 Other options are available, but for now, we will keep it simple.</p></li>
 </ol>
+<p><img alt="Create repository" src="../_images/create-repository.png" /></p>
 <blockquote>
-<div><p>The description is optional, but it can help others understand what the repository is about.
+<div><p>The description is optional, but it helps others better understand what the repository is about
 So, it is a good practice to add one or two sentences describing the content/objective of the repository.</p>
 </div></blockquote>
 <blockquote>
-<div><p>You can start with a private repository, and later, if you want to share it with others, you can change it to public.</p>
+<div><p>If later you want to share your repository with others, you can change it to public.</p>
 </div></blockquote>
 <div class="admonition-example admonition">
 <p class="admonition-title">Example:</p>
 <p>I created a repository <em>named</em> <code class="docutils literal notranslate"><span class="pre">vcca2024-share-with-github</span></code>.
 The <em>description</em> is <code class="docutils literal notranslate"><span class="pre">Repository</span> <span class="pre">for</span> <span class="pre">sharing</span> <span class="pre">code</span> <span class="pre">and</span> <span class="pre">files</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">VCCA</span> <span class="pre">2024</span> <span class="pre">workshop</span> <span class="pre">participants</span></code>.
-An, I selected the repository to be <em>public</em>.</p>
+And, I selected the repository to be <em>public</em>.</p>
 </div>
-<p><img alt="Create repository" src="../_images/create-repository.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are part of a project, you might want to create a repository under the organization. In this case, you will need to select the organization in the <code class="docutils literal notranslate"><span class="pre">Owner</span></code> field.</p>
-<p>Also, you can initialize the repository with a README file, a <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> file, and a license.
-There is more information about these options in the GitHub documentation.</p>
+<p>If you are part of a project, you might want to create a repository under the organization.
+For this, you will need to select the organization in the <code class="docutils literal notranslate"><span class="pre">Owner</span></code> field.
+In the example, I selected <code class="docutils literal notranslate"><span class="pre">CadenzaProject</span></code> as owner, this means that the repository will be created under the organization
+<code class="docutils literal notranslate"><span class="pre">CadenzaProject</span></code>.</p>
+<p>Additionally, you can initialize (which is a good practice) the repository with a
+README file, a .gitignore file, and a license. I’m skipping these steps for now to
+keep it simple, but I highly recommend initializing the repository with these files.
+More information about these options is available in the GitHub documentation.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title"><a class="reference external" href="http://README.md">README.md</a> file</p>
+<p>It provides an introduction and overview of your project.
+It should help visitors and collaborators understand what your project does,
+how to install it, and how to use it.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">.gitignore file</p>
+<p>It specifies files and directories that Git should ignore (not track) in your project.
+It helps prevent committing files like editor-specific settings, compiled files,
+and sensitive information (e.g., API keys) to your repository.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">LICENSE file</p>
+<p>It specifies the terms under which others can use, modify, and distribute your code,
+protecting your intellectual property rights and clarifies the legal obligations
+for users and contributors.</p>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>Once the repository is created, you will see the repository page. You can see the URL of the repository in the address bar of your browser.</p></li>
+<li><p>Once the repository is created, you will see the repository page. You can see the URL of the repository in the address bar of your browser.
+Note that the repo URL is made of three parts: <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;username&gt;/&lt;repository</span> <span class="pre">name&gt;</span></code>:</p></li>
 </ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">https://github.com</span></code>: the base URL of GitHub.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">username</span></code>: your GitHub username.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">repository-name</span></code>: the name of the repository.</p></li>
+</ul>
 <p><img alt="Repository URL" src="../_images/repository-url.png" /></p>
 <section id="making-changes-to-your-repo">
-<h2>Making changes to your repo<a class="headerlink" href="#making-changes-to-your-repo" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.1. </span>Making changes to your repo<a class="headerlink" href="#making-changes-to-your-repo" title="Link to this heading">#</a></h2>
 <p>After a repository has been created, you can make changes to it like
 changing the repo name, description, adding files, etc.</p>
 <section id="change-name">
-<h3>Change Name<a class="headerlink" href="#change-name" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.1.1. </span>Change Name<a class="headerlink" href="#change-name" title="Link to this heading">#</a></h3>
 <p>To change the name of the repository:</p>
 <ol class="arabic simple">
 <li><p>Go to the repository page.</p></li>
@@ -488,12 +525,12 @@ changing the repo name, description, adding files, etc.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro/account.html"
+       href="account.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Starting with GitHub</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Setting Up Your Account</p>
       </div>
     </a>
     <a class="right-next"
@@ -501,7 +538,7 @@ changing the repo name, description, adding files, etc.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Working with a local repository</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Making Changes</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -521,8 +558,8 @@ changing the repo name, description, adding files, etc.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">Change Name</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">3.1. Making changes to your repo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-name">3.1.1. Change Name</a></li>
 </ul>
 </li>
 </ul>

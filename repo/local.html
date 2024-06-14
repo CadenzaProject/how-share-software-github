@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Working with a local repository &#8212; How to share software and models via GitHub or other platforms</title>
+    <title>4. Making Changes &#8212; How to share software and models via GitHub or other platforms</title>
   
   
   
@@ -61,8 +61,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'repo/local';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Securing our repo" href="secure.html" />
-    <link rel="prev" title="First Repo" href="new_repo.html" />
+    <link rel="next" title="5. Securing our repo" href="secure.html" />
+    <link rel="prev" title="3. Create First Repo" href="new_repo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,14 +180,22 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../intro/intro.html">Understanding the Basics of GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../intro/account.html">Starting with GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/intro.html">1. Git and GitHub</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Setting GitHub</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Starting with GitHub</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="new_repo.html">First Repo</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Working with a local repository</a></li>
-<li class="toctree-l1"><a class="reference internal" href="secure.html">Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account.html">2. Setting Up Your Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_repo.html">3. Create First Repo</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Making Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secure.html">5. Securing our repo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issue.html">6. Creating Issues Templates</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Collaboration</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../collab/general.html">7. Collaborating with others</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/branch.html">8. Branching the code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/pull.html">9. Pull Request</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../collab/fork.html">10. Making changes in a Fork</a></li>
 </ul>
 
     </div>
@@ -373,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Working with a local repository</h1>
+    <h1>Making Changes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -383,14 +391,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-a-repository">Cloning a repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-files">Adding files</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-changes">Pushing changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-a-repository">4.1. Cloning a Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">4.2. Making changes to your repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-files">4.3. Adding files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">4.3.1. Committing changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-changes">4.3.2. Pushing changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">How our repository looks now</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">4.4. How our repository looks now</a></li>
 </ul>
             </nav>
         </div>
@@ -402,27 +410,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="working-with-a-local-repository">
-<h1>Working with a local repository<a class="headerlink" href="#working-with-a-local-repository" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="making-changes">
+<h1><span class="section-number">4. </span>Making Changes<a class="headerlink" href="#making-changes" title="Link to this heading">#</a></h1>
 <section id="cloning-a-repository">
-<h2>Cloning a repository<a class="headerlink" href="#cloning-a-repository" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Cloning a Repository<a class="headerlink" href="#cloning-a-repository" title="Link to this heading">#</a></h2>
 <p>To start working in your repository, you need to make a <strong>local copy</strong> of it
 (a copy in your computer), which allows you to work on it offline.
 This action is called <strong>cloning</strong> the repository.
 The command to clone a repository with <strong>GIT</strong> is <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code>.</p>
 <p>To clone a repository, follow these steps:</p>
 <ol class="arabic simple">
-<li><p>Open a terminal window.</p></li>
+<li><p>In you computer, open a terminal window.</p></li>
 <li><p>CD to the directory where you want to clone the repository.</p></li>
 <li><p>Run the following command:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/CadenzaProject/vcca2024-share-with-github-demo.git
-<span class="nb">cd</span><span class="w"> </span>vcca2024-share-with-github-demo
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;repo<span class="w"> </span>URL&gt;
+<span class="nb">cd</span><span class="w"> </span>&lt;repo<span class="w"> </span>name&gt;
 </pre></div>
 </div>
 <p>The URL is the URL of the repository you want to clone.
 You can get the link directly from GitHub</p>
-<p><img alt="Clone" src="../_images/clone.png" /></p>
+<figure class="align-default" id="empty-repo">
+<img alt="../_images/clone.png" src="../_images/clone.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">An empty repository</span><a class="headerlink" href="#empty-repo" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="no-empty-repo">
+<img alt="../_images/clone_2.png" src="../_images/clone_2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">A repository with files.</span><a class="headerlink" href="#no-empty-repo" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> will create a directory in your computer with the same name as the repository.</p>
 <p><img alt="git-clone.png" src="../_images/git-clone.png" /></p>
 <div class="admonition note">
@@ -431,7 +450,7 @@ You can get the link directly from GitHub</p>
 </div>
 </section>
 <section id="making-changes-to-your-repo">
-<h2>Making changes to your repo<a class="headerlink" href="#making-changes-to-your-repo" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Making changes to your repo<a class="headerlink" href="#making-changes-to-your-repo" title="Link to this heading">#</a></h2>
 <p>After cloning the repository, you can make changes to it like
 adding files, modifying files, etc.</p>
 <div class="admonition-readme-md-file admonition">
@@ -441,13 +460,23 @@ This file is used to describe the repository, its content, and how to use it.
 It is the first file that users see when they access the repository.</p>
 <p>The format of this file is called <a class="reference external" href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax"><strong>Markdown</strong></a>.
 Which is a lightweight markup language with plain text formatting syntax.</p>
+<p>A good example of this is the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file of the <a class="reference external" href="https://github.com/claritychallenge/clarity/blob/main/README.md">PyClarity repository</a>.
+As you can see in this file, it provides an introduction to the project, how to install it, how to use it,
+and what are the current and previous challenges.</p>
+<figure class="align-default" id="clarity-readme">
+<img alt="../_images/clarity_readme-md.png" src="../_images/clarity_readme-md.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">PyClarity Readme for Clarity and Cadenza Projects</span><a class="headerlink" href="#clarity-readme" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </div>
+</section>
 <section id="adding-files">
-<h3>Adding files<a class="headerlink" href="#adding-files" title="Link to this heading">#</a></h3>
+<h2><span class="section-number">4.3. </span>Adding files<a class="headerlink" href="#adding-files" title="Link to this heading">#</a></h2>
 <p>We created our repository without a default <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.
 Let’s create one now.</p>
 <ol class="arabic simple">
-<li><p>Inside the repository directory, create a new file named <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p></li>
+<li><p>In your computer, inside the repository directory, create a new file named <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p></li>
 <li><p>Open the file with your favorite text editor.</p></li>
 <li><p>Add the following content:</p></li>
 </ol>
@@ -462,9 +491,8 @@ This is the landing page for the demo repo created for VCCA 2024 workshop on sha
 <p><img alt="README.md" src="../_images/readme-md.png" /></p>
 <p>Now, you have a <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file in your local copy of your repository.
 To add this file to the online repository, you need to <strong>commit</strong> the changes.</p>
-</section>
 <section id="committing-changes">
-<h3>Committing changes<a class="headerlink" href="#committing-changes" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Committing changes<a class="headerlink" href="#committing-changes" title="Link to this heading">#</a></h3>
 <p>When you make changes to your repository, you need to <strong>commit</strong> them.<br />
 A commit is a snapshot of the changes you made at a specific time.</p>
 <p>To commit changes, follow these steps:</p>
@@ -482,23 +510,19 @@ The staging area (or index) is an intermediate area where changes are gathered b
 <p>Usage:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">&lt;file&gt;</span></code>: Add a specific file to the staging area. Like we did with the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code>: Add all files in the working directory to the staging area.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ass</span> <span class="pre">-i</span></code>: This opens an interactive interface to select changes to be staged.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code>: Add all files in the working directory to the staging area (Note the <code class="docutils literal notranslate"><span class="pre">.</span></code> at the end).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-i</span></code>: This opens an interactive interface to select changes to be staged.</p></li>
 </ul>
 <p>Now that the file is <code class="docutils literal notranslate"><span class="pre">staged</span></code> (in the staging area) we can commit it.</p>
-<p>The git commit command is used in Git to save changes from the staging area to the repository.
+<p>The <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> command is used in Git to save changes from the staging area to the repository.
 This command creates a new commit containing the changes that have been staged,
 along with a message that describes the changes.</p>
 <p>Usage:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Descriptive</span> <span class="pre">commit</span> <span class="pre">message&quot;</span></code>: The most common way to commit changes. The <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag allows you to add a commit message directly from the command line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;Descriptive</span> <span class="pre">commit</span> <span class="pre">message&quot;</span></code>: This is the most common way to commit changes. The <code class="docutils literal notranslate"><span class="pre">-m</span></code> flag allows you to add a commit message directly from the command line.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-a</span> <span class="pre">-m</span> <span class="pre">&quot;Commit</span> <span class="pre">message&quot;</span></code>: The <code class="docutils literal notranslate"><span class="pre">-a</span></code> flag (or <code class="docutils literal notranslate"><span class="pre">--all</span></code>) will automatically stage any tracked,<br />
 modified files before the commit, skipping the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> step. However, this will not stage new (untracked) files.</p></li>
 </ul>
-<div class="admonition-example admonition">
-<p class="admonition-title">Example:</p>
-<p>git commit -m “Adding the README file in repository”</p>
-</div>
 <div class="attention admonition">
 <p class="admonition-title">Best Practices</p>
 <ul class="simple">
@@ -509,14 +533,14 @@ modified files before the commit, skipping the <code class="docutils literal not
 </div>
 </section>
 <section id="pushing-changes">
-<h3>Pushing changes<a class="headerlink" href="#pushing-changes" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.2. </span>Pushing changes<a class="headerlink" href="#pushing-changes" title="Link to this heading">#</a></h3>
 <p>Now is time to update our online repository with the changes we made locally.
 For this, we run the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command.
 <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code> command is used in Git to upload local repository content to a remote repository,
 by transferring the commits from your local repository to a remote one.</p>
 <p>Usage:</p>
 <ul class="simple">
-<li><p><strong>git push</strong>: This command is used to push commits from your local repository to a remote repository.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code>: This command is used to push commits from your local repository to a remote repository.</p></li>
 </ul>
 <div class="warning docutils">
 <p>Before pushing changes, make sure you have the necessary permissions to push to the repository.</p>
@@ -525,7 +549,7 @@ by transferring the commits from your local repository to a remote one.</p>
 </section>
 </section>
 <section id="how-our-repository-looks-now">
-<h2>How our repository looks now<a class="headerlink" href="#how-our-repository-looks-now" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.4. </span>How our repository looks now<a class="headerlink" href="#how-our-repository-looks-now" title="Link to this heading">#</a></h2>
 <p>After pushing the changes, you can see the updated repository on GitHub.</p>
 <p><img alt="Repo.png" src="../_images/repo.png" /></p>
 </section>
@@ -567,7 +591,7 @@ by transferring the commits from your local repository to a remote one.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">First Repo</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Create First Repo</p>
       </div>
     </a>
     <a class="right-next"
@@ -575,7 +599,7 @@ by transferring the commits from your local repository to a remote one.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Securing our repo</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Securing our repo</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -595,14 +619,14 @@ by transferring the commits from your local repository to a remote one.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-a-repository">Cloning a repository</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">Making changes to your repo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-files">Adding files</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">Committing changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-changes">Pushing changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cloning-a-repository">4.1. Cloning a Repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-your-repo">4.2. Making changes to your repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-files">4.3. Adding files</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#committing-changes">4.3.1. Committing changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pushing-changes">4.3.2. Pushing changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">How our repository looks now</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">4.4. How our repository looks now</a></li>
 </ul>
   </nav></div>
 
