@@ -5,6 +5,7 @@
 :width: 200
 ``` 
 
+
 Git is a distributed version control system created by Linus Torvalds in 2005, 
 which allows developers to track changes in their code over time and 
 collaborate with others seamlessly. Git offers numerous features and properties, including:
@@ -41,6 +42,27 @@ Some of the key features of GitHub include:
 * **Open Source**: Share your work with others, and contribute to open source projects.
 * **Portfolio**: Showcase your work to potential employers, collaborators, and users.
 
+
+## Why GitHub for research?
+
+Git is a powerful tool that offers numerous benefits to developers and teams working on software projects.
+However, for research projects, Git can be equally valuable, providing several advantages:
+
+1. **Version Control**: Keep track of changes in your research code, data, and documentation.
+2. **Collaboration**: Work with others on the same project, and keep track of who did what.
+3. **Reproducibility**: Ensure that your research is reproducible by tracking changes and sharing code.
+4. **Documentation**: Write and maintain documentation for your research, making it easier for others to understand and use it.
+5. **Backup**: Keep your research safe by storing it in a remote repository, preventing data loss.
+6. **Open Science**: Share your research with others, and contribute to open science initiatives.
+
+By using Git for your research projects, you can improve the quality, transparency, 
+and reproducibility of your work, making it easier to collaborate with others and share 
+your findings with the world. Or simply, keep track of your work and avoid losing it.
+
+Having your research on GitHub is also a way you can share your code for others to use and 
+reproduce your results. This is becoming more and more important in the scientific community,
+and it desired by some journal and funders as it allows for more transparency and 
+reproducibility in research.
 
 ## Key Concepts
 
@@ -149,6 +171,13 @@ The typical workflow in GitHub involves the following steps:
    Add new files, modify existing files, or delete files as needed.
 5. **Commit Changes**: Commit your changes to the branch with a descriptive 
    message. Commits create a snapshot of the project at that point in time.
+6. **Push Changes**: Push your commits to the remote repository on GitHub. 
+   This updates the repository with your changes and makes them available to others.
+7. **Create a Pull Request**: Create a pull request to propose your changes 
+   for review and merging. Pull requests allow team members to review your 
+   changes and provide feedback before merging them.
+
+![github flow.png](../figures/github%20flow.png)
 
 :::{attention}
 You will need to install Git on your local machine to use the Git commands.

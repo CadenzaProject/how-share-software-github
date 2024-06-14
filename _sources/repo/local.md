@@ -153,3 +153,66 @@ After pushing the changes, you can see the updated repository on GitHub.
 ![Repo.png](../figures/repo.png)
 
 
+## Get information about status of your repository
+
+To get information about the status of your repository, you can use the `git status` command.
+This command shows the status of changes as untracked, modified, or staged.
+It helps you understand which changes are staged for the next commit, 
+which changes are not staged, and which files are not tracked by Git.
+
+For example, I staged one change in our README.md file and then I made more modifications 
+without staging them.
+When I run `git status` I get the following output:
+
+
+![status](../figures/status.png)
+
+Another very useful command is `git log`. This command shows the commit logs in reverse chronological order.
+This command is useful to see the history of changes in the repository.
+There are many options to format the output of `git log`, you can check them in the [official documentation](https://git-scm.com/docs/git-log).
+The most common are:
+
+* **git log --oneline**: Displays a summary with each commit on a single line.
+* **git log -n <number>**: Limits the log output to the specified number of commits.
+* **git log --graph**: Shows a text-based graphical representation of the commit history.
+* **git log --author=<name>**: Filters commits by a specific author.
+* **git log --since=<date>**: Shows commits more recent than a specific date.
+* **git log --until=<date>**: Shows commits older than a specific date.
+
+
+## Undoing changes
+
+Sometimes you make changes that you want to undo.
+There are several ways to undo changes in Git, depending on the type of change you want to undo.
+
+### Unstaging changes
+
+If you have staged changes that you want to unstage, you can use the `git reset` command.
+This command is used to reset the current HEAD to the specified state.
+
+Usage:
+* `git reset HEAD <file>`: Unstages the specified file, but keeps the changes in the working directory.
+* `git reset HEAD`: Unstages all changes in the staging area.
+
+### Discarding changes
+
+If you want to discard changes in the working directory, you can use the `git checkout` command.
+This command is used to update files in the working directory to match the version in the index or the specified commit.
+
+Usage:
+
+* `git checkout -- <file>`: Discards changes in the working directory for the specified file.
+* `git checkout .`: Discards changes in the working directory for all files.
+
+### Reverting commits
+
+If you want to undo a commit, you can use the `git revert` command.
+This command creates a new commit that undoes the changes made by a previous commit.
+
+Usage:
+
+* `git revert <commit>`: Reverts the changes made by the specified commit.
+
+For more information on undoing changes in Git, you can check:
+* [Git official documentation](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things).
+* [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/undoing-changes).

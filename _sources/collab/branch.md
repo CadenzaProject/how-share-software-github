@@ -113,3 +113,60 @@ Let's try again to create the issue template and push it to the `feature-1` bran
 3. Push the changes to the remote repository.
 
 
+## What if more than one person is working on the same branch?
+
+When working in a team, it is common to have multiple people working on the same branch.
+In this case, it is essential to keep the branch up-to-date with the changes made 
+by other team members. 
+
+To update your local branch with the changes from the remote repository, you have two options:
+
+1. Fetch the changes from the remote repository and merge them into your local branch.
+2. Pull the changes from the remote repository into your local branch.
+
+The `git fetch` command downloads the changes from the remote repository but does not apply them to your local branch.
+You can then use the `git merge` command to merge the changes into your local branch.
+
+```bash
+git fetch origin
+git merge origin/feature-1
+```
+
+The `git pull` command is a combination of `git fetch` and `git merge`.
+It downloads the changes from the remote repository and merges them into your local 
+branch in one step.
+
+```bash
+git pull origin feature-1
+```
+
+When working in a team, it is essential to communicate with other team members to avoid 
+conflicts and ensure that everyone is aware of the changes being made to the codebase.
+
+```{admonition} 
+:class: hint
+
+Here `pull` is from the point of view of the local repository.
+When you `git pull` you are pulling changes from the remote repository to your local repository.  
+
+```
+
+## What if there are conflicts?
+
+When multiple people are working on the same branch, conflicts can occur if two or more
+people make changes to the same file or the same lines of code.
+
+If a conflict occurs, Git will notify you when you try to merge or pull changes from the 
+remote repository. You will need to resolve the conflict manually by editing the file
+to resolve the conflicting changes.
+
+After resolving the conflict, you need to add the file to the staging area and commit the changes.
+
+## What if I want to work on more than one feature at a time?
+
+If you want to work on multiple features or bug fixes simultaneously, you can create
+a new branch for each feature or bug fix. This way, you can keep the changes for each
+feature separate and avoid conflicts between them.
+
+When working on multiple branches, you can switch between branches using the 
+`git checkout` or `git switch` command.

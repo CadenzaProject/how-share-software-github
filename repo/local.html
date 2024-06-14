@@ -398,6 +398,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">4.4. How our repository looks now</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-information-about-status-of-your-repository">4.5. Get information about status of your repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#undoing-changes">4.6. Undoing changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unstaging-changes">4.6.1. Unstaging changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discarding-changes">4.6.2. Discarding changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reverting-commits">4.6.3. Reverting commits</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -552,6 +559,68 @@ by transferring the commits from your local repository to a remote one.</p>
 <p>After pushing the changes, you can see the updated repository on GitHub.</p>
 <p><img alt="Repo.png" src="../_images/repo.png" /></p>
 </section>
+<section id="get-information-about-status-of-your-repository">
+<h2><span class="section-number">4.5. </span>Get information about status of your repository<a class="headerlink" href="#get-information-about-status-of-your-repository" title="Link to this heading">#</a></h2>
+<p>To get information about the status of your repository, you can use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> command.
+This command shows the status of changes as untracked, modified, or staged.
+It helps you understand which changes are staged for the next commit,
+which changes are not staged, and which files are not tracked by Git.</p>
+<p>For example, I staged one change in our <a class="reference external" href="http://README.md">README.md</a> file and then I made more modifications
+without staging them.
+When I run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code> I get the following output:</p>
+<p><img alt="status" src="../_images/status.png" /></p>
+<p>Another very useful command is <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>. This command shows the commit logs in reverse chronological order.
+This command is useful to see the history of changes in the repository.
+There are many options to format the output of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>, you can check them in the <a class="reference external" href="https://git-scm.com/docs/git-log">official documentation</a>.
+The most common are:</p>
+<ul class="simple">
+<li><p><strong>git log –oneline</strong>: Displays a summary with each commit on a single line.</p></li>
+<li><p><strong>git log -n <number></strong>: Limits the log output to the specified number of commits.</p></li>
+<li><p><strong>git log –graph</strong>: Shows a text-based graphical representation of the commit history.</p></li>
+<li><p><strong>git log –author=<name></strong>: Filters commits by a specific author.</p></li>
+<li><p><strong>git log –since=<date></strong>: Shows commits more recent than a specific date.</p></li>
+<li><p><strong>git log –until=<date></strong>: Shows commits older than a specific date.</p></li>
+</ul>
+</section>
+<section id="undoing-changes">
+<h2><span class="section-number">4.6. </span>Undoing changes<a class="headerlink" href="#undoing-changes" title="Link to this heading">#</a></h2>
+<p>Sometimes you make changes that you want to undo.
+There are several ways to undo changes in Git, depending on the type of change you want to undo.</p>
+<section id="unstaging-changes">
+<h3><span class="section-number">4.6.1. </span>Unstaging changes<a class="headerlink" href="#unstaging-changes" title="Link to this heading">#</a></h3>
+<p>If you have staged changes that you want to unstage, you can use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code> command.
+This command is used to reset the current HEAD to the specified state.</p>
+<p>Usage:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">HEAD</span> <span class="pre">&lt;file&gt;</span></code>: Unstages the specified file, but keeps the changes in the working directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">HEAD</span></code>: Unstages all changes in the staging area.</p></li>
+</ul>
+</section>
+<section id="discarding-changes">
+<h3><span class="section-number">4.6.2. </span>Discarding changes<a class="headerlink" href="#discarding-changes" title="Link to this heading">#</a></h3>
+<p>If you want to discard changes in the working directory, you can use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span></code> command.
+This command is used to update files in the working directory to match the version in the index or the specified commit.</p>
+<p>Usage:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">--</span> <span class="pre">&lt;file&gt;</span></code>: Discards changes in the working directory for the specified file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">.</span></code>: Discards changes in the working directory for all files.</p></li>
+</ul>
+</section>
+<section id="reverting-commits">
+<h3><span class="section-number">4.6.3. </span>Reverting commits<a class="headerlink" href="#reverting-commits" title="Link to this heading">#</a></h3>
+<p>If you want to undo a commit, you can use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">revert</span></code> command.
+This command creates a new commit that undoes the changes made by a previous commit.</p>
+<p>Usage:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">revert</span> <span class="pre">&lt;commit&gt;</span></code>: Reverts the changes made by the specified commit.</p></li>
+</ul>
+<p>For more information on undoing changes in Git, you can check:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things">Git official documentation</a>.</p></li>
+<li><p><a class="reference external" href="https://www.atlassian.com/git/tutorials/undoing-changes">Atlassian Git Tutorials</a>.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -626,6 +695,13 @@ by transferring the commits from your local repository to a remote one.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-repository-looks-now">4.4. How our repository looks now</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-information-about-status-of-your-repository">4.5. Get information about status of your repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#undoing-changes">4.6. Undoing changes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unstaging-changes">4.6.1. Unstaging changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discarding-changes">4.6.2. Discarding changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reverting-commits">4.6.3. Reverting commits</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

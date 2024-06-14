@@ -397,6 +397,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-the-new-branch">8.2. Making changes to the new branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-more-than-one-person-is-working-on-the-same-branch">8.3. What if more than one person is working on the same branch?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-there-are-conflicts">8.4. What if there are conflicts?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-i-want-to-work-on-more-than-one-feature-at-a-time">8.5. What if I want to work on more than one feature at a time?</a></li>
 </ul>
             </nav>
         </div>
@@ -510,6 +513,48 @@ Let’s try again to create the issue template and push it to the <code class="d
 <li><p>Push the changes to the remote repository.</p></li>
 </ol>
 </section>
+<section id="what-if-more-than-one-person-is-working-on-the-same-branch">
+<h2><span class="section-number">8.3. </span>What if more than one person is working on the same branch?<a class="headerlink" href="#what-if-more-than-one-person-is-working-on-the-same-branch" title="Link to this heading">#</a></h2>
+<p>When working in a team, it is common to have multiple people working on the same branch.
+In this case, it is essential to keep the branch up-to-date with the changes made
+by other team members.</p>
+<p>To update your local branch with the changes from the remote repository, you have two options:</p>
+<ol class="arabic simple">
+<li><p>Fetch the changes from the remote repository and merge them into your local branch.</p></li>
+<li><p>Pull the changes from the remote repository into your local branch.</p></li>
+</ol>
+<p>The <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> command downloads the changes from the remote repository but does not apply them to your local branch.
+You can then use the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code> command to merge the changes into your local branch.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>origin
+git<span class="w"> </span>merge<span class="w"> </span>origin/feature-1
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code> command is a combination of <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code> and <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code>.
+It downloads the changes from the remote repository and merges them into your local
+branch in one step.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>feature-1
+</pre></div>
+</div>
+<p>When working in a team, it is essential to communicate with other team members to avoid
+conflicts and ensure that everyone is aware of the changes being made to the codebase.</p>
+</section>
+<section id="what-if-there-are-conflicts">
+<h2><span class="section-number">8.4. </span>What if there are conflicts?<a class="headerlink" href="#what-if-there-are-conflicts" title="Link to this heading">#</a></h2>
+<p>When multiple people are working on the same branch, conflicts can occur if two or more
+people make changes to the same file or the same lines of code.</p>
+<p>If a conflict occurs, Git will notify you when you try to merge or pull changes from the
+remote repository. You will need to resolve the conflict manually by editing the file
+to resolve the conflicting changes.</p>
+<p>After resolving the conflict, you need to add the file to the staging area and commit the changes.</p>
+</section>
+<section id="what-if-i-want-to-work-on-more-than-one-feature-at-a-time">
+<h2><span class="section-number">8.5. </span>What if I want to work on more than one feature at a time?<a class="headerlink" href="#what-if-i-want-to-work-on-more-than-one-feature-at-a-time" title="Link to this heading">#</a></h2>
+<p>If you want to work on multiple features or bug fixes simultaneously, you can create
+a new branch for each feature or bug fix. This way, you can keep the changes for each
+feature separate and avoid conflicts between them.</p>
+<p>When working on multiple branches, you can switch between branches using the
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span></code> command.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -583,6 +628,9 @@ Let’s try again to create the issue template and push it to the <code class="d
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-changes-to-the-new-branch">8.2. Making changes to the new branch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-more-than-one-person-is-working-on-the-same-branch">8.3. What if more than one person is working on the same branch?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-there-are-conflicts">8.4. What if there are conflicts?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-i-want-to-work-on-more-than-one-feature-at-a-time">8.5. What if I want to work on more than one feature at a time?</a></li>
 </ul>
   </nav></div>
 
