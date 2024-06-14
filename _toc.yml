@@ -7,9 +7,9 @@ parts:
   - caption: Introduction
     chapters:
      - file: intro/intro
-     - file: intro/account
-  - caption: Setting GitHub
+  - caption: Starting with GitHub
     chapters:
+      - file: repo/account
       - file: repo/new_repo
       - file: repo/local
       - file: repo/secure
