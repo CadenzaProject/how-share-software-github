@@ -3,7 +3,6 @@
 
 format: jb-book
 root: index
-title: My alternate page title
 parts:
   - caption: Introduction
     chapters:

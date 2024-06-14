@@ -1,90 +1,126 @@
-# Understanding the Basics of GitHub
+# Git and GitHub
+
+```{figure} ../figures/Git-logo.png
+:alt: Git
+:width: 200
+``` 
+
+Git is a distributed version control system created by Linus Torvalds in 2005, 
+which allows developers to track changes in their code over time and 
+collaborate with others seamlessly. Git offers numerous features and properties, including:
+
+1. **Distributed systems**: Each developer has a local copy of the repository on their machine.
+This allows for faster operations since most tasks are performed locally.
+2. **Branching and merging**: Developers can create branches to work on specific features or fixes
+without affecting the main codebase. Once the work is complete, the changes can be merged back into the main branch.
+3. **Data integrity**: Every file and commit are checksummed using SHA-1 hashes, ensuring data integrity.
+Commited data are very difficult to alter, providing a reliable history of changes.
+4. **Distributed collaboration**: Git supports various workflows for collaborating with others on a project.
+5. **Open Source and Community**: Git is free and open-source and has a large community of users and contributors.
+It works cross-platform, working on all major operating systems, including Windows, macOS, and Linux.
+
+There are several platforms that provide Git hosting services, including GitHub, GitLab, and Bitbucket.
+These platforms offer additional features on top of Git, such as issue tracking, pull requests, and continuous integration.
+In this workshop, we will focus on GitHub, one of the most popular Git hosting services, and explore its features and functionalities.
 
 ```{figure} ../figures/GitHub.png
 :alt: GitHub
 :width: 150
 ``` 
-GitHub is a platform for version control and collaboration, primarily
-designed to facilitate software development. It is built on top of Git,
-and provides a web-based interface that simplifies many aspects of Git's 
-functionality, making it more accessible and easier to use, especially 
-for those who are new to version control systems.
 
+Github is a web-based platform that provides hosting for Git repositories and offers a wide range of features to support software development projects.
+Some of the key features of GitHub include:
 
-``````{admonition} Git
-```{image} ../figures/Git-logo.png
-:alt: Git
-:width: 70
-:align: left
-``` 
-\
-Git is a distributed version control system created by Linus Torvalds in 2005, 
-which allows developers to track changes in their code over time and 
-collaborate with others seamlessly
-``````
+* **Version Control**: Keep track of changes in your code, and revert to previous versions if needed.  
+* **Collaboration**: Work with others on the same project, and keep track of who did what.  
+* **Code Review**: Get feedback on your code from others, and improve its quality.  
+* **Issue Tracking**: Keep track of bugs, feature requests, and other tasks related to your project.  
+* **Continuous Integration**: Automate testing and deployment of your code, making it easier to maintain and scale.  
+* **Documentation**: Write and maintain documentation for your project, making it easier for others to understand and use it.
+* **Community**: Build a community around your project, and get help from others when needed.
+* **Open Source**: Share your work with others, and contribute to open source projects.
+* **Portfolio**: Showcase your work to potential employers, collaborators, and users.
+
 
 ## Key Concepts
 
-### Repository (Repo)
+```{admonition} Repository (Repo)
+:class: dropdown
 A repository is a storage space where a project and its files are kept. 
 It contains all the project's files and the entire revision history 
 of each file. Repositories can be public, allowing anyone to view and 
 contribute, or private, restricting access to specific users. 
 They are the central hub for all the activity in a project, 
 including code, documentation, and issues.
-
-### Branch
+```
+   
+```{admonition} Branch
+:class: dropdown
 A branch is a parallel version of a repository. It allows you to work 
 on different versions of a project simultaneously. The main branch, 
 often called "main" or "master," is considered the production-ready 
 version of the project. Developers create branches to develop features, 
 fix bugs, or experiment without affecting the main branch. 
 Once the work on a branch is complete, it can be merged back into the main branch.
+```
 
-### Commit
+```{admonition} Commit
+:class: dropdown
 A commit is a record of changes made to the files in a repository. 
 Each commit has a unique ID and contains a message describing the changes made. 
 Commits allow you to track the history of changes in a project, providing a 
 detailed timeline of how the project has evolved over time. 
 They act as snapshots of the project at specific points, which can be reverted 
 to if needed.
+```
 
-### Pull Request (PR)
+```{admonition} Pull Request (PR)
+:class: dropdown
 A pull request is a method of proposing changes to a repository. 
 When you create a pull request, you ask the repository maintainers 
 to review and merge your changes into the main branch. Pull requests 
 facilitate collaboration by allowing team members to discuss and 
 review code before it is merged. They provide a structured way to 
 manage changes and ensure code quality.
+```
 
-### Merge
+```{admonition} Merge
+:class: dropdown
 Merging is the process of integrating changes from one branch into another. 
 When a pull request is approved, the changes are merged into the main branch, 
 incorporating the new code into the project. Merging ensures that updates 
 and new features developed in separate branches are consolidated into the 
 main codebase.
+```
 
-### Fork
+```{admonition} Fork
+:class: dropdown
 A fork is a personal copy of another user's repository. 
 Forking a repository allows you to freely experiment with changes without 
 affecting the original project. You can make changes in your fork, 
 and if you want those changes to be incorporated into the original 
 repository, you can submit a pull request.
+```
 
-### Issue
+```{admonition} Issue
+:class: dropdown
 An issue is a way to track enhancements, tasks, and bugs for a project. 
 Issues can be assigned to specific users, labeled, and organized into milestones. 
 They provide a clear way to manage and prioritize work, ensuring that everyone 
 on the team is aware of what needs to be done and any problems that need to 
 be addressed.
+```
 
-### Clone
+```{admonition} Clone
+:class: dropdown
 Cloning is the process of creating a local copy of a repository on your computer. 
 Cloning allows you to work on a project locally, making changes and committing 
 them before pushing them back to the remote repository on GitHub. 
 It enables offline development and testing.
+```
 
-### GitHub Actions
+```{admonition} GitHub Actions
+:class: dropdown
 GitHub Actions is an automation tool integrated into GitHub that allows you 
 to automate your software development workflows. With GitHub Actions, 
 you can create workflows that build, test, and deploy your code whenever 
@@ -95,6 +131,7 @@ and continuous deployment (CI/CD) directly from your repository.
 GitHub Actions will not be covered in this workshop, but it is a powerful
 tool that you should explore to streamline your development process.
 :::
+```
 
 ## Workflow
 
@@ -113,7 +150,7 @@ The typical workflow in GitHub involves the following steps:
 5. **Commit Changes**: Commit your changes to the branch with a descriptive 
    message. Commits create a snapshot of the project at that point in time.
 
-:::{warning}
+:::{attention}
 You will need to install Git on your local machine to use the Git commands.
 For this, you can follow the instructions provided on the [Git website](https://git-scm.com/).
 :::
