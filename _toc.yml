@@ -5,9 +5,11 @@ format: jb-book
 root: index
 parts:
   - caption: Introduction
+    numbered: true
     chapters:
      - file: intro/intro
   - caption: Starting with GitHub
+    numbered: true
     chapters:
       - file: repo/account
       - file: repo/new_repo
@@ -15,6 +17,7 @@ parts:
       - file: repo/secure
       - file: repo/issue
   - caption: Collaboration
+    numbered: true
     chapters:
       - file: collab/general
       - file: collab/branch

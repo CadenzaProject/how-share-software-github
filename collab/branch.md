@@ -3,7 +3,15 @@
 As we just saw, after protecting our `main` branch, we can't push directly to it.
 We need to create a new branch and then create a pull request to merge it into `main`.
 
+Wether you are working on a forked repository or a repository where you have write access, 
+it is a good practice to create a new branch for each new feature or bug fix. 
+
 Here, we will create a new branch called `feature-1` and push some changes to it.
+
+The recommended procedure to work on a new feature or bug fix is as follows:
+
+1. Create an `ISSUE` that describes what you want to do. Issues are not only for errors, 
+but also for new features, improvements, and other tasks. 
 
 ## Create a new branch
 

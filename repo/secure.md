@@ -27,7 +27,7 @@ into the main branch.
 
 6. For any other rule, just pressed "Add rule" and repeat the process.
 
-# Push changes in our protected branch
+## Push changes in our protected branch
 
 Let's try to push a commit in the `main` branch again 
 

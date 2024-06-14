@@ -17,7 +17,7 @@ Here are the steps to invite collaborators:
 
 ![Invite collaborators](../figures/invite-collaborators.png)
 
-Here you can invite people will have an active role in your repository, like
+Here you can invite people who will have an active role in your repository, like
 - Developing new features
 - Fixing bugs
 - Reviewing code

@@ -35,4 +35,21 @@ If applicable, please **copy and paste** the command that failed and the full tr
 Add any other context about the problem here such as the data that is being used.
 ```
 
-We will use these issues later.
+We will use this issues later.
+
+```{admonition} Other templates 
+:class: hint
+
+Issues are not only for reporting errors or bugs, but also for new features, 
+improvements, and other tasks.
+
+You can create different templates for different types of issues.
+
+* `feature_request.md`
+* `enhancement.md`
+* `documentation.md`
+* `question.md`
+* `help_wanted.md`
+
+You can create as many templates as you need and for different purposes. 
+```
