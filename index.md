@@ -11,19 +11,27 @@ Shared under [Creative Commons BY-NC-SA 4.0](https://github.com/source-separatio
 
 ```{image} figures/VCCA2024-logo-small-2.webp
 :alt: VCCA 2024
-:width: 250
+:width: 200
 :align: left
 ``` 
 
 </td>
-<td width="200px">
+
+<td> 
+
+```{image} figures/clarity_logo_black.png
+:alt: Clarity
+:width: 220
+:align: right
+``` 
+
 </td>
 
 <td> 
 
 ```{image} figures/cadenza-logo.png
-:alt: VCCA 2024
-:width: 300
+:alt: Cadenza
+:width: 250
 :align: right
 ``` 
 

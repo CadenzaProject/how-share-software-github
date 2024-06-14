@@ -53,3 +53,18 @@ You can create different templates for different types of issues.
 
 You can create as many templates as you need and for different purposes. 
 ```
+
+## Discussions in the ISSUE
+
+When you create an issue, you can discuss the problem, the solution, 
+and other aspects of the issue. You can also mention other collaborators
+to ask for help or to review the issue.
+
+This is a very useful tool to keep track of the progress of the issue and
+to have a record of the decisions made during the resolution of the issue.
+
+In the Issues tab on GitHub you can see all the issues created in the repository.
+You can filter them by open, closed, and other criteria.
+
+![Issue List](../figures/issue-list.png)
+

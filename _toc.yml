@@ -21,6 +21,12 @@ parts:
     chapters:
       - file: collab/general
       - file: collab/branch
+      - file: collab/pull
       - file: collab/fork
+      - file: collab/models
+  - caption: Conclusions
+    numbered: true
+    chapters:
+      - file: concl/concl
 
 

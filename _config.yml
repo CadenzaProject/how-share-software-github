@@ -1,7 +1,7 @@
 # Book settings
 title: How to share software and models via GitHub or other platforms
 author: Gerardo Roa Dabike
-logo: figures/cadenza_small.png
+#logo: figures/cadenza_small.png
 
 execute:
   execute_notebooks: force
@@ -22,8 +22,8 @@ html:
   use_issues_button: true
   use_repository_button: true
 
+
 launch_buttons:
   notebook_interface: "classic"
   colab_url: "https://colab.research.google.com"
-  thebe: true
-  binderhub_url: "https://mybinder.org"
+
