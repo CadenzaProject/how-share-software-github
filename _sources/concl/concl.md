@@ -51,3 +51,12 @@ Thank you for your attention and happy sharing!
 3. YouTube: Traversy Media Git Tutorial for Beginners
    * A beginner-friendly video tutorial on Git.
    * [Traversy Media Git Tutorial](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+
+
+###  Desktop Applications
+
+There are some applications that can help you manage your Git repositories more easily.
+These are very helpful if you want to avoid using the command line. 
+
+* [GitHub Desktop](https://desktop.github.com/)
+* [GitKraken](https://www.gitkraken.com/)

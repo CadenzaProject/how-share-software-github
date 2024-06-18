@@ -177,7 +177,7 @@ The typical workflow in GitHub involves the following steps:
    for review and merging. Pull requests allow team members to review your 
    changes and provide feedback before merging them.
 
-![github flow.png](../figures/github%20flow.png)
+![github flow.png](../figures/github_flow.png)
 
 :::{attention}
 You will need to install Git on your local machine to use the Git commands.

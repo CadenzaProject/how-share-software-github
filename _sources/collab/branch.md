@@ -143,7 +143,7 @@ git pull origin feature-1
 When working in a team, it is essential to communicate with other team members to avoid 
 conflicts and ensure that everyone is aware of the changes being made to the codebase.
 
-```{admonition} 
+```{admonition} Pull vs Pull Request
 :class: hint
 
 Here `pull` is from the point of view of the local repository.
