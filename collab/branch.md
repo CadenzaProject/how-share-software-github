@@ -27,7 +27,7 @@ There are several ways to create a new branch in GitHub.
 
 1. Clone the repository to your local machine (if you haven't already).
 ```bash
-git clone https://github.com/username/<repo name>git
+git clone https://github.com/username/<repo name>
 cd <repo name>
 ```
 
@@ -143,13 +143,6 @@ git pull origin feature-1
 When working in a team, it is essential to communicate with other team members to avoid 
 conflicts and ensure that everyone is aware of the changes being made to the codebase.
 
-```{admonition} Pull vs Pull Request
-:class: hint
-
-Here `pull` is from the point of view of the local repository.
-When you `git pull` you are pulling changes from the remote repository to your local repository.  
-
-```
 
 ## What if there are conflicts?
 

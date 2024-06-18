@@ -1,5 +1,16 @@
 # Pull Request
 
+```{admonition} Pull vs Pull Request
+:class: hint
+
+Here `pull` is from the point of view of the local repository.
+When you `git pull` you are pulling changes from the remote repository to your local repository.  
+
+`pull request` is from the point of view of the remote repository.
+When you create a pull request, you are requesting the repository maintainers to review your changes and pull your changes into their repository.
+
+```
+
 ## Creating a pull request (PR)
 
 After making changes in the new branch, you can create a pull request to merge the changes into the `main` branch.
