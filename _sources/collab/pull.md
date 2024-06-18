@@ -3,12 +3,13 @@
 ```{admonition} Pull vs Pull Request
 :class: hint
 
-Here `pull` is from the point of view of the local repository.
-When you `git pull` you are pulling changes from the remote repository to your local repository.  
+1. The `git pull` command is from the point of view of the local repository.
+When you `git pull`, you are pulling changes from the remote repository to your local repository,
+updating your copy so you can keep working with an updated version.  
 
-`pull request` is from the point of view of the remote repository.
+2. A `Pull Request` is from the point of view of the remote repository.
 When you create a pull request, you are requesting the repository maintainers to review your changes and pull your changes into their repository.
-
+So, you are asking them to pull your changes.
 ```
 
 ## Creating a pull request (PR)
