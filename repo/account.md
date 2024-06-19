@@ -27,13 +27,13 @@ This repository is used to store information about you, such as your bio,
 profile picture, and repositories.
 
 For example:
-* Username `groadabike`: `https://github.com/groadabike`. 
-* Username `claritychallenge`: `https://github.com/claritychallenge`.
-* Username `CadenzaProject`: `https://github.com/CadenzaProject`.
+* Username `groadabike`: [`https://github.com/groadabike`](https://github.com/groadabike). 
+* Username `claritychallenge`: [`https://github.com/claritychallenge`](https://github.com/claritychallenge).
+* Username `CadenzaProject`: [`https://github.com/CadenzaProject`](https://github.com/CadenzaProject).
 
 To know more about this repository and how to customize it, please access the 
 [about your profile](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/about-your-profile)
-webpage
+documentation page.
 
 ```
 
